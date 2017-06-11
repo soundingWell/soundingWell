@@ -16,7 +16,7 @@ sys.path.append('python/')
 class MainPage(webapp.RequestHandler):
     
     def get(self):
-        print 'yup'
+        # print 'yuppo'
         path = 'html/main.html'
         template_values = {}
         self.response.out.write(template.render(path, template_values))    
