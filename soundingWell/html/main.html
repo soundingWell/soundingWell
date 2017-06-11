@@ -2,35 +2,55 @@
 
 <html lang="en">
   <head>
-  <link rel="shortcut icon" href="resources/sine_favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="resources/sine_favicon.ico" type="image/x-icon">
   
-  <!-- required meta tags -->
-  <meta charset="UTF-8">
-  <!-- If IE use the latest rendering engine -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- Set the page to the width of the device and set the zoon level -->
-  <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <!-- required meta tags -->
+    <meta charset="UTF-8">
+    <!-- If IE use the latest rendering engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Set the page to the width of the device and set the zoon level -->
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
 
-  <title>Sounding Well</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/blog.css"
+    <title>Sounding Well</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/blog.css"
   </head>
   <body>
-    <div class="blog-masthead">
-      <div class="container"
-        <nav class="nav blog-nav">
-          <a class="nav-link active" href="#">Home</a>
-          <a class="nav-link active" href="#">About</a>
-      </div>
-    </div>
     <div class="blog-header">
       <div class="container">
-        <img src="resources/title_page_art.jpg" width="10%" height="10%" class="img-fluid" alt="Responsive image"></img>
+        <!--img src="resources/title_page_art.jpg" width="10%" height="10%" class="img-fluid" alt="Responsive image"-->
         <h1 class="blog-title">Sounding Well</h1>
         <p class="lead blog-description">Stuff about sound.</p>
       </div>
     </div>
+    <div class="blog-masthead">
+      <div class="container"
+        <nav class="nav blog-nav">
+          <a class="nav-link active" href="#"><h2>Home</h2></a>
+          <span class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown"><h2>Posts</h2>
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/wavFiles">Reading Wav Files</a></li>
+              <li><a href="#">Coming Soon</a></li>
+              <li><a href="#">Coming Soon</a></li>
+            </ul>
+          </span>
+          <a class="nav-link active" href="#"><h2>About</h2></a>
+          
+        </nav>
+      </div>
+    </div>
+    
+    <div class="row" id="box-search">
+    <div class="thumbnail text-center">
+        <img src="resources/title_page_art.jpg" alt="" class="img-responsive">
+        <div class="caption">
+            <p style="color:red;">SoundingWell</p>
+        </div>
+    </div>
+</div>
     
     
     <h2>This sounds well!</h2>
