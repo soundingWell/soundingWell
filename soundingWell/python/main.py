@@ -19,9 +19,16 @@ class MainPage(webapp.RequestHandler):
         # print 'yuppo'
         path = 'html/main.html'
         template_values = {}
-        self.response.out.write(template.render(path, template_values))    
-    
-application = webapp.WSGIApplication([('/', MainPage)],
+        self.response.out.write(template.render(path, template_values))  
+
+class WavFiles(webapp.RequestHandler):
+    def get(self):
+        path = 'html/wav_files.html'
+        template_values = {}
+        self.response.out.write(template.render(path, template_values))
+
+application = webapp.WSGIApplication([('/', MainPage),
+                                      ('/wavFiles', WavFiles)],
                                        debug=True)
 
 def main():

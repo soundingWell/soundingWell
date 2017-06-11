@@ -1,6 +1,5 @@
-# Should be soundingWell1
-application: soundingwell1
-version: 1
+#application: soundingwell1
+#version: 1
 runtime: python27
 api_version: 1
 threadsafe: false
@@ -9,6 +8,16 @@ handlers:
 
 - url: /
   script: python/main.py
+  
+- url: /css
+  static_dir: css
+  
+- url: /wavFiles
+  script: python/main.py
+  
+- url: /resources
+  static_dir: resources
+
   #login: required
   #auth_fail_action: unauthorized
   
